@@ -1,148 +1,286 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Clean</title>
-<link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
-<style type="text/css">
-body, td, th {
-	font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-</style>
+  <meta charset="utf-8">
+  <title>Clean</title>
+  <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+  <style type="text/css">
+    footer {
+      position: fixed;
+      left: 0;
+      right: 0;
+    }
+
+    header {
+      top: 0;
+    }
+
+    footer {
+      bottom: 0;
+    }
+
+    body,
+    td,
+    th {
+      font-family: Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    }
+
+    .ades {
+      position: relative;
+    }
+  </style>
 </head>
 
-<body style="margin:0px; padding:0px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; padding:24px 0px;">
-<table width="1000" border="0" align="center" cellpadding="5" cellspacing="0">
-  <tr>
-    <td width="619">&nbsp;</td>
-    <td width="361"><img src="logo2.png" alt="" style="max-width:100%; width:350px"/></td>
-  </tr>
-  <tr>
-    <td height="100">&nbsp;</td>
-    <td height="100">&nbsp;</td>
-  </tr>
-  <tr>
-    <td><h1 style="color:#009cd1; margin:0px 0px 15px;" >Invoice</h1>
-    </td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="left" valign="top">
-     <h4 style="font-size:18px; margin:0px; font-weight:600">HollandDrive</h4>
-    <ul style="margin:0px; padding:0px; list-style:none; line-height:28px;">
-        <li>t.a.v. Henk de Rooij </li>
-        <li>Donkere Spaarne 12 zw</li>
-        <li>2011 JG Haarlem</li>
-        <li>Nederland</li>
-      </ul></td>
-    <td align="left" valign="top">
-    <ul style="margin:0px; padding:0px; list-style:none; line-height:28px;">
-        <li><strong style="display:inline-block; color:#009fd6; font-weight:500; width:150px;">Invoice number</strong> 79151103</li>
-        <li><strong style="display:inline-block; width:150px; color:#009fd6; font-weight:500;">Invoice date</strong> 27 January 2019 </li>
-        <li><strong style="display:inline-block; width:150px; color:#009fd6; font-weight:500;">Client number</strong> 15714786</li>
-        <li><strong style="display:inline-block; width:150px; color:#009fd6; font-weight:500;">Project name </strong> Marketing AD</li>
-        <li><strong style="display:inline-block; width:150px; color:#009fd6; font-weight:500;">Invoice state</strong> Paid</li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <td height="56">&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="2"><table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+<body
+  style="margin:0px; padding:0px; font-family:Gotham, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size:16px; padding:24px 0px;">
+
+  <!-- Header -->
+  <header>
+    <table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
       <tr>
-        <th height="46" align="left" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">Items</th>
-        <th align="left" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">QTY</th>
-        <th align="left" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">Price</th>
-        <th align="right" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">Sub totaal</th>
+        <td width="61%">&nbsp;</td>
+        <td width="39%">
+          <img src="https://app-dev.joet.io/img/clean_logo.png" alt="" style="max-width:100%; width:350px" />
+        </td>
       </tr>
+
       <tr>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi AFi-R Multiroom wifi basisstation</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
-        <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
+        <td align="left" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td colspan="2">
+                <h1 style="color:#009cd1; margin:0px 0px 15px;">Invoice</h1>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">
+                <h4 style="font-size:18px; margin:0px;">HollandDrive</h4>
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2">t.a.v. Henk de Rooij</td>
+            </tr>
+            <tr>
+              <td colspan="2">Donkere Spaarne 12 zw</td>
+            </tr>
+            <tr>
+              <td colspan="2">2011 JG Haarlem</td>
+            </tr>
+            <tr>
+              <td colspan="2">Nederland</td>
+            </tr>
+          </table>
+        </td>
+
+        <td align="left" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td colspan="2">
+                <h1 style="color:#009cd1; margin:0px 0px 15px;">&nbsp;</h1>
+              </td>
+            </tr>
+            <tr>
+              <td style="white-space:nowrap;"><strong>Invoice number</strong></td>
+              <td>79151103</td>
+            </tr>
+            <tr>
+              <td style="white-space:nowrap;"><strong>Invoice date</strong></td>
+              <td>27 January 2019 </td>
+            </tr>
+            <tr>
+              <td><strong>Client number</strong></td>
+              <td>15714786</td>
+            </tr>
+            <tr>
+              <td style="white-space:nowrap;"><strong>Project name</strong></td>
+              <td>Marketing AD</td>
+            </tr>
+            <tr>
+              <td style="white-space:nowrap;"><strong>Invoice state</strong></td>
+              <td>Paid</td>
+            </tr>
+          </table>
+        </td>
       </tr>
-      <tr>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi AFi-R Multiroom wifi basisstation</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
-        <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
-      </tr>
-      <tr>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi AFi-R Multiroom wifi basisstation</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
-        <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
-      </tr>
-      <tr>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi AFi-R Multiroom wifi basisstation</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
-        <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
-        <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="124">&nbsp;</td>
-    <td>&nbsp;</td>
-  </tr>
-  <tr>
-    <td align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="top" bgcolor="#f7f7f7" style="padding:15px;"><table width="100%" border="0" cellspacing="0" cellpadding="5">
-      <tr>
-        <td align="left" valign="middle">Total excluding tax</td>
-        <td align="right" valign="middle">€ 585,67</td>
-      </tr>
-      <tr>
-        <td align="left" valign="middle">21% Tax</td>
-        <td align="right" valign="middle">€ 90,33</td>
-      </tr>
-      <tr>
-        <td align="left" valign="middle" style="border-top:2px solid #fff;"><strong>Total including tax</strong></td>
-        <td align="right" valign="middle" style="border-top:2px solid #fff;"><strong>€ 676,00</strong></td>
-      </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td height="85" align="left" valign="top">&nbsp;</td>
-    <td align="left" valign="top">&nbsp;</td>
-  </tr>
-  <tr>
-    <td colspan="2" align="left" valign="top"><table width="100%" border="0" cellspacing="0" cellpadding="5">
-      <tr>
-        <td><div style="display:flex; align-items:baseline; white-space:nowrap;">Adres <span style="display:inline-block; width:100%; border-bottom:2px solid #009fd6;  margin-left:10px"></span></div></td>
-        <td><div style="display:flex; align-items:baseline; white-space:nowrap;">Phone <span style="display:inline-block; width:100%; border-bottom:2px solid #009fd6;  margin-left:10px"></span></div></td>
-        <td><div style="display:flex; align-items:baseline; white-space:nowrap;">E-mail <span style="display:inline-block; width:100%; border-bottom:2px solid #009fd6;  margin-left:10px"></span>
-        </div></td>
-        <td><div style="display:flex; align-items:baseline; white-space:nowrap;">KvK <span style="display:inline-block; width:100%; border-bottom:2px solid #009fd6;  margin-left:10px"></span></div></td>
-        <td><div style="display:flex; align-items:baseline; white-space:nowrap;">BTW <span style="display:inline-block; width:100%; border-bottom:2px solid #009fd6;  margin-left:10px"></span></div></td>
-        <td><div style="display:flex; align-items:baseline; white-space:nowrap;">IBAN <span style="display:inline-block; width:100%; border-bottom:2px solid #009fd6; margin-left:10px"></span></div></td>
-      </tr>
-      <tr>
-        <td>Gonnetstraat 26, 2011 KA Haarlem</td>
-        <td>06 18 669 444</td>
-        <td>henk@hollanddrive.nl</td>
-        <td>34291434</td>
-        <td>NL 001450312 B70</td>
-        <td>NL91 INGB 0661 7122 06</td>
-      </tr>
+
       <tr>
         <td>&nbsp;</td>
         <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
-        <td>&nbsp;</td>
+      </tr>
+    </table>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+      <tr>
+        <td colspan="2">
+          <table width="100%" border="0" align="center" cellpadding="5" cellspacing="0">
+            <tr>
+              <th height="5" align="left" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">Items
+              </th>
+              <th align="left" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">QTY</th>
+              <th align="left" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">Price</th>
+              <th align="right" valign="middle" bgcolor="#009fd6" style="color:#fff; padding:10px;">Sub totaal</th>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi
+                AFi-R
+                Multiroom wifi basisstation</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
+              <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi
+                AFi-R
+                Multiroom wifi basisstation</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
+              <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi
+                AFi-R
+                Multiroom wifi basisstation</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
+              <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">Ubiquiti AmpliFi
+                AFi-R
+                Multiroom wifi basisstation</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">4</td>
+              <td align="left" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 169,-</td>
+              <td align="right" valign="middle" style="padding:10px; border-bottom:1px solid #ccc;">€ 676,00</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td height="30">&nbsp;</td>
         <td>&nbsp;</td>
       </tr>
-    </table></td>
-  </tr>
-  <tr>
-    <td colspan="2" align="center" valign="middle" style="color:#808080;">&nbsp;</td>
-  </tr>
-  <tr>
-  <td colspan="2" align="center" valign="middle" style="color:#808080;"><div style="display:flex; align-items:center; justify-content:center"><span>Easily invoiced with</span><span style="margin-left:18px"><img src="joet.png" alt="" style="width:100px"/></span></div></td>
-  </tr>
-</table>
+    </table>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <table width="100%" align="center">
+      <tr>
+        <td align="left" valign="top">&nbsp;</td>
+        <td width="30%" align="left" valign="top" bgcolor="#f7f7f7" style="padding:15px;">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5">
+            <tr>
+              <td align="left" valign="middle" style="white-space:nowrap;">Total excluding tax</td>
+              <td align="right" valign="middle">€ 585,67</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="white-space:nowrap;">21% Tax</td>
+              <td align="right" valign="middle">€ 90,33</td>
+            </tr>
+            <tr>
+              <td align="left" valign="middle" style="border-top:2px solid #fff; white-space:nowrap;"><strong>Total
+                  including tax</strong></td>
+              <td align="right" valign="middle" style="border-top:2px solid #fff;"><strong>€ 676,00</strong></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="40" align="left" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="left" valign="top">
+          <table width="100%" border="0" cellspacing="0" cellpadding="5" style="font-size:12px;">
+            <tr>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td width="17%" align="left" valign="bottom">Adres</td>
+                    <td width="83%" align="left" valign="bottom"><span
+                        style="display:block; width:100%; border-bottom:2px solid #009fd6;  margin-bottom:4px">&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td width="34%" align="left" valign="bottom">Phone</td>
+                    <td width="66%" align="left" valign="bottom"><span
+                        style="display:block; width:100%; border-bottom:2px solid #009fd6; margin-bottom:4px">&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td width="23%" align="left" valign="bottom" style="white-space:nowrap">E-mail</td>
+                    <td width="77%" align="left" valign="bottom"><span
+                        style="display:block; width:100%; border-bottom:2px solid #009fd6; margin-bottom:4px">&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td width="36%" align="left" valign="bottom">KvK</td>
+                    <td width="64%" align="left" valign="bottom"><span
+                        style="display:block; width:100%; border-bottom:2px solid #009fd6; margin-bottom:4px">&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td width="25%" align="left" valign="bottom">BTW</td>
+                    <td width="75%" align="left" valign="bottom"><span
+                        style="display:block; width:100%; border-bottom:2px solid #009fd6; margin-bottom:4px">&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+              <td>
+                <table width="100%" border="0" cellspacing="0" cellpadding="2">
+                  <tr>
+                    <td width="20%" align="left" valign="bottom">IBAN</td>
+                    <td width="80%" align="left" valign="bottom"><span
+                        style="display:block; width:100%; border-bottom:2px solid #009fd6;  margin-bottom:4px">&nbsp;</span>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td>Gonnetstraat 26, 2011 KA Haarlem</td>
+              <td>06 18 669 444</td>
+              <td>henk@hollanddrive.nl</td>
+              <td>34291434</td>
+              <td>NL 001450312 B70</td>
+              <td>NL91 INGB 0661 7122 06</td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" height="15" align="left" valign="top">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" valign="middle" style="color:#808080;">
+          <span style="position:relative; top:-10px">Easily invoiced with</span>
+          <span style="margin-left:18px"><img src="https://app-dev.joet.io/img/joet.png" alt=""
+              style="height:27px" /></span>
+        </td>
+      </tr>
+    </table>
+  </footer>
+
 </body>
+
 </html>
